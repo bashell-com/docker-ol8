@@ -1,4 +1,4 @@
-FROM docker.io/library/oraclelinux:8-slim
+FROM quay.io/bashell/oraclelinux:8-slim
 MAINTAINER Chaiwat Suttipongsakul "cwt@bashell.com"
 
 RUN rpm -ivh \
