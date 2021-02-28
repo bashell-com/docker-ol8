@@ -1,6 +1,7 @@
 FROM quay.io/bashell/oraclelinux:8-slim
 MAINTAINER Chaiwat Suttipongsakul "cwt@bashell.com"
 
+ADD https://www.random.org/integers/?num=16&min=0&max=15&col=4&base=16&format=plain&rnd=new /.random
 RUN rpm -ivh \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/dnf-4.2.23-4.el8.noarch.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-dnf-4.2.23-4.el8.noarch.rpm \
