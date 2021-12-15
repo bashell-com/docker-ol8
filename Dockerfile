@@ -23,9 +23,9 @@ RUN rpm -ivh \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-libdnf-0.63.0-3.0.1.el8.x86_64.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-libs-3.6.8-41.0.1.el8.x86_64.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-pip-wheel-9.0.3-20.el8.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-rpm-4.14.3-19.el8_4.x86_64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-rpm-4.14.3-19.el8.x86_64.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-setuptools-wheel-39.2.0-6.el8.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/rpm-build-libs-4.14.3-19.el8_4.x86_64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/rpm-build-libs-4.14.3-19.el8.x86_64.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/tpm2-tss-2.3.2-4.el8.x86_64.rpm \
  && mkdir -p /etc/yum/vars \
  && touch /etc/yum/vars/ociregion \
