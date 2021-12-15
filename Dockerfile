@@ -7,6 +7,7 @@ RUN rpm -ivh \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/dnf-data-4.7.0-4.0.1.el8.noarch.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/elfutils-default-yama-scope-0.185-1.el8.noarch.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/elfutils-libs-0.185-1.el8.x86_64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/expat-2.2.5-4.el8.aarch64.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/gdbm-1.18-1.el8.x86_64.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/gdbm-libs-1.18-1.el8.x86_64.rpm \
     https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/ima-evm-utils-1.3.2-12.el8.x86_64.rpm \
