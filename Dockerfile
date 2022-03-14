@@ -1,4 +1,4 @@
-FROM quay.io/bashell/oraclelinux:8-slim
+FROM quay.io/bashell/oraclelinux:8-slim-arm64v8
 MAINTAINER Chaiwat Suttipongsakul "cwt@bashell.com"
 
 ADD https://www.random.org/integers/?num=16&min=0&max=15&col=4&base=16&format=plain&rnd=new /.random
@@ -21,31 +21,31 @@ ENV _SETUPTOOLS 39.2.0-6.el8
 ENV _TPM2TSS 2.3.2-4.el8
 
 RUN rpm -ivh \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/dnf-${_DNF}.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/dnf-data-${_DNF}.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/elfutils-default-yama-scope-${_ELFUTILS}.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/elfutils-libs-${_ELFUTILS}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/expat-${_EXPAT}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/gdbm-${_GDBM}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/gdbm-libs-${_GDBM}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/ima-evm-utils-${_IMAEVM}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/libcomps-${_LIBCOMPS}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/libnsl2-${_LIBNSL2}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/libreport-filesystem-${_LIBREPORT}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/libtirpc-${_LIBTIRPC}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/platform-python-${_PYTHON}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/platform-python-setuptools-${_SETUPTOOLS}.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-dnf-${_DNF}.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-gpg-${_GPGME}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-hawkey-${_LIBDNF}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-libcomps-${_LIBCOMPS}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-libdnf-${_LIBDNF}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-libs-${_PYTHON}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-pip-wheel-${_PIP}.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-rpm-${_RPM}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/python3-setuptools-wheel-${_SETUPTOOLS}.noarch.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/rpm-build-libs-${_RPM}.x86_64.rpm \
-    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackage/tpm2-tss-${_TPM2TSS}.x86_64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/dnf-${_DNF}.noarch.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/dnf-data-${_DNF}.noarch.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/elfutils-default-yama-scope-${_ELFUTILS}.noarch.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/elfutils-libs-${_ELFUTILS}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/expat-${_EXPAT}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/gdbm-${_GDBM}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/gdbm-libs-${_GDBM}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/ima-evm-utils-${_IMAEVM}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/libcomps-${_LIBCOMPS}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/libnsl2-${_LIBNSL2}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/libreport-filesystem-${_LIBREPORT}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/libtirpc-${_LIBTIRPC}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/platform-python-${_PYTHON}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/platform-python-setuptools-${_SETUPTOOLS}.noarch.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-dnf-${_DNF}.noarch.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-gpg-${_GPGME}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-hawkey-${_LIBDNF}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-libcomps-${_LIBCOMPS}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-libdnf-${_LIBDNF}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-libs-${_PYTHON}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-pip-wheel-${_PIP}.noarch.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-rpm-${_RPM}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/python3-setuptools-wheel-${_SETUPTOOLS}.noarch.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/rpm-build-libs-${_RPM}.aarch64.rpm \
+    https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/aarch64/getPackage/tpm2-tss-${_TPM2TSS}.aarch64.rpm \
  && mkdir -p /etc/yum/vars \
  && touch /etc/yum/vars/ociregion \
  && dnf clean all && dnf upgrade -y --skip-broken \
