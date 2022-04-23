@@ -5,12 +5,12 @@ ADD https://www.random.org/integers/?num=16&min=0&max=15&col=4&base=16&format=pl
 
 ENV _DNF 4.7.0-4.0.1.el8
 ENV _ELFUTILS 0.185-1.el8
-ENV _EXPAT 2.2.5-4.el8
+ENV _EXPAT 2.2.5-4.0.1.el8_5.3
 ENV _GDBM 1.18-1.el8
 ENV _GPGME 1.13.1-9.el8
 ENV _IMAEVM 1.3.2-12.el8
 ENV _LIBCOMPS 0.1.16-2.el8
-ENV _LIBDNF 0.63.0-3.0.1.el8
+ENV _LIBDNF 0.63.0-3.0.2.el8
 ENV _LIBNSL2 1.2.0-2.20180605git4a062cf.el8
 ENV _LIBREPORT 2.9.5-15.0.3.el8
 ENV _LIBTIRPC 1.1.4-5.0.1.el8
